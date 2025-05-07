@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css">
+</head>
+<body>
+    <section>
+        <header>
+           <div class="logo">
+            <a href=" "> <i class='bx bx-landscape' style='color:#fffefe' ></i> Skyscanner</a>
+           </div>
+            <div class="opition">
+               <button id="openModalBtn"> <a href="#" class="header-icon"><i class="fas fa-globe"></i></a></button>
+              <button>  <a href="fov.html" class="header-icon"><i class="fas fa-heart"></i></a></button>
+               <button id="loginBtn"> <a href="#" class="header-icon"><i class="fas fa-user"></i> Log in</a></button>
+                <button id="bt_drop"  style="cursor: pointer;"><a href="#" class="header-icon menu"><i class="fas fa-bars"></i></a></button>
+         </div>
+        </header>
+        <div class="btn">
+            <button  class="btn-1 active "><a href="fligth.html"><i class='bx bxs-plane-alt' style='color:#fffefe' ></i> Flight</a></button>
+            <button  class="btn-1"><a href="hotels.html"><i class='bx bx-hotel' style='color:#fffefe' ></i accordio> Hotels</a></button>
+            <button  class="btn-1"><a href="car.html"><i class='bx bx-car' style='color:#fffefe' ></i> Car hire</a></button>
+        </div>
+        <h1 style="margin-left: 400px;color: white; margin-top: 20px;">Millions of cheap flights. One simple search.</h1>
+        <div class="btn-group">
+            <button id="rigth" class="btn_2"><label class="tex-1">From</label> <br> <input type="text" class="inp-1" placeholder="Country, city or airport"></button>
+           <!--<button class="arrow"><i class="fa-solid fa-arrow-right-arrow-left"></i></button>--> 
+            <button class="btn_2"><label class="tex-1">To</label> <br> <input type="text" class="inp-1" placeholder="Country, city or airport"></button>
+            <button class="btn_2"><label class="tex-1">Depart</label> <br><label class="tex-2">Add data</label></button>
+            <button class="btn_2"><label class="tex-1">Return </label> <br><label class="tex-2">Add data</label> </button>
+            <button  id="left"  class="btn_2"><label class="tex-1">Travellers and cabin class</label><label class="tex-2"> <span>1</span>Adult ,Economyy</label></button>
+            <button class="btn_3">Search</button>
+        </div>
+        <div class="check">
+            <div style="display: flex; margin-top: 15px;" class="check_same">
+               <div class="in1"> <input type="checkbox"><label for="">Add nearby airports</label></div>
+              <div class="in2">  <input type="checkbox"><label for="">Add nearby airports</label></div>
+            </div>
+            <div style="margin-top: 15px;"><input type="checkbox"><label for="">Direct flights</label></div>
+        </div>
+    </section>
+    <div>
+        <div class="buttons_1">
+            <button class="btn_4"><span><img  alt=""  ="https://content.skyscnr.com/m/213647fc801d9ba1/original/Explore-40px.svg" class="GlobalNavigationCard_logoImage__YWY4Y">Explore everyone </span></button>
+            <button class="btn_4"><span><img  alt="" src="https://content.skyscnr.com/m/2841d48f47d816fe/original/hotels_white_2.svg" class="GlobalNavigationCard_logoImage__YWY4Y">Hotels</span> </button>
+            <button class="btn_4"><span><img alt="" src="https://content.skyscnr.com/m/a9bea01b98d7552/original/carhire_white_2.svg" class="GlobalNavigationCard_logoImage__YWY4Y">Car hire</span> </button>
+        </div>
+    </div>
+    <br><br>
+   <div>
+    <div class="image_text" >
+        <img src="lunar-meteorite-1536x864.jpg" alt="">
+        <div class="text-overlay">
+            <div class="text">Can't decide where to go?</div>
+            <div class="text"> <h1>Explore every destination</h1></div>
+            <button class="b1"><a   href="explor.html">Search flights Everywhere</a></button>
+        </div>
+    </div>
+   </div>
+   <h1 style="margin-left: 400px;margin-top: 30px;">Booking flights with Skyscanner</h1>
+    <div style="display: flex;" class="text_tranzition">
+        
+        <div  class="culom">
+           <div class="con">
+            <h6 style="font-family: Arial, Helvetica, sans-serif;font-weight: bold;">How does Skyscanner work?<span><button id="down" onclick="toggleParagraph()"><i class="fa-solid fa-chevron-down"></i></span></h6>
+            <p style="font-family: Arial, Helvetica, sans-serif;font-size: small;" id="text-ups"></p>
+            <hr style="width: 500px;">
+           </div>
+           <div class="con">
+            <h6 style="font-family: Arial, Helvetica, sans-serif;font-weight: bold;">How can I find the cheapest flight using Skyscanner? <span><button id="down2" onclick="toggleParagraph2()"><i class="fa-solid fa-chevron-down"></i></span></h6>
+            <p style="font-family: Arial, Helvetica, sans-serif;font-size: small;" id="text-ups_2"></p>
+            <hr style="width: 500px;">
+           </div>
+           <div class="con">
+            <h6 style="font-family: Arial, Helvetica, sans-serif;font-weight: bold;">Where should I book a flight to right now?<span><button id="down3" onclick="toggleParagraph3()"><i class="fa-solid fa-chevron-down"></i></span></h6>
+            <p style="font-family: Arial, Helvetica, sans-serif;font-size: small;" id="text-ups_3"></p>
+            <hr style="width: 500px;">
+           </div>
+           <div class="con">
+            <h6 style="font-family: Arial, Helvetica, sans-serif;font-weight: bold;">Do I book my flight with Skyscanner?<span><button id="down4" onclick="toggleParagraph4()"><i class="fa-solid fa-chevron-down"></i></span></h6>
+            <p style="font-family: Arial, Helvetica, sans-serif;font-size: small;" id="text-ups_4"></p>
+            <hr style="width: 500px;">
+           </div>
+           <div class="con">
+            <h6 style="font-family: Arial, Helvetica, sans-serif;font-weight: bold;">What happens after I have booked my flight?<span><button id="down5" onclick="toggleParagraph5()"><i class="fa-solid fa-chevron-down"></i></span></h6>
+            <p style="font-family: Arial, Helvetica, sans-serif;font-size: small;" id="text-ups_5"></p>
+            <hr style="width: 500px;">
+           </div>
+        </div>
+        <div style="margin-left: 170px;" class="culom">
+            <div class="con">
+             <h6 style="font-family: Arial, Helvetica, sans-serif;font-weight: bold;">Does Skyscanner do hotels too?<span><button id="down6" onclick="toggleParagraph6()"><i class="fa-solid fa-chevron-down"></i></span></h6>
+             <p style="font-family: Arial, Helvetica, sans-serif;font-size: small;" id="text-ups_6"></p>
+             <hr style="width: 500px;">
+            </div>
+            <div class="con">
+             <h6 style="font-family: Arial, Helvetica, sans-serif;font-weight: bold;">What about car hire? <span><button id="down7" onclick="toggleParagraph7()"><i class="fa-solid fa-chevron-down"></i></span></h6>
+             <p style="font-family: Arial, Helvetica, sans-serif;font-size: small;" id="text-ups_7"></p>
+             <hr style="width: 500px;">
+            </div>
+            <div class="con">
+             <h6 style="font-family: Arial, Helvetica, sans-serif;font-weight: bold;">What’s a Price Alert?<span><button id="down8" onclick="toggleParagraph8()"><i class="fa-solid fa-chevron-down"></i></span></h6>
+             <p style="font-family: Arial, Helvetica, sans-serif;font-size: small;" id="text-ups_8"></p>
+             <hr style="width: 500px;">
+            </div>
+            <div class="con">
+             <h6 style="font-family: Arial, Helvetica, sans-serif;font-weight: bold;">Can I book a flexible flight ticket? <span><button id="down11" onclick="toggleParagraph11()"><i class="fa-solid fa-chevron-down"></i></span></h6>
+             <p style="font-family: Arial, Helvetica, sans-serif;font-size: small;" id="text-ups_11"></p>
+             <hr style="width: 500px;">
+            </div>
+            <div class="con">
+             <h6 style="font-family: Arial, Helvetica, sans-serif;font-weight: bold;">Can I book flights that emit less CO₂? <span><button id="down13" onclick="toggleParagraph13()"><i class="fa-solid fa-chevron-down"></i></span></h6>
+             <p style="font-family: Arial, Helvetica, sans-serif;font-size: small;" id="text-ups_13"></p>
+             <hr style="width: 500px;">
+            </div>
+         </div>
+    </div>
+    <div class="last">
+        <div class="con">
+            <h6 style="font-family: Arial, Helvetica, sans-serif;font-weight: bold;margin-left: 400px;
+            margin-top: 40px;">Our international sites<span><button id="bt_16" onclick="toggleParagraph_1()"><i class="fa-solid fa-chevron-down"></i></span></h6>
+            <p style="font-family: Arial, Helvetica, sans-serif;font-size: small; margin-left: 400px;" id="text-ups_e"></p>
+            <hr style="width: 1100px; margin-left: 400px;">
+        </div>
+    </div>
+       <footer >
+       <div style="margin-left: 400px;margin-top: 50px;" class="bt_2">
+        <button>Egypt-English(uk.ج.مEGP)</button>
+       </div>
+        <div style="margin-left: 250px;" class="col">
+            <a href="">Help</a>
+            <a href="">Privacy Settings</a>
+            <a href="">xLog in</a>
+        </div>
+        <div  class="col">
+            <a href="">Cookie policy</a>
+            <a href="">Privacy policy</a>
+            <a href="">Terms of service</a>
+            <a href="">Company Details</a>
+        </div>
+        <div style="margin-right:280px;margin-top: 50px;" class="culom">
+            <div style="margin-top: 10px;" class="con">
+             <h6 style="font-family: Arial, Helvetica, sans-serif;font-weight: bold;">Explore<span><button id="down_0" onclick="toggleParagraph_2()"><i class='bx bx-chevron-up bx-flip-horizontal' style='color:#ffffff' ></i></span></h6>
+             <p style="font-family: Arial, Helvetica, sans-serif;font-size: small;" id="text-ups_0"></p>
+           
+            </div>
+            <div style="margin-top: 10px;" class="con">
+             <h6 style="font-family: Arial, Helvetica, sans-serif;font-weight: bold;">Company <span><button id="down_1" onclick="toggleParagraph_3()"><i class='bx bx-chevron-up bx-flip-horizontal' style='color:#ffffff' ></i></span></h6>
+             <p style="font-family: Arial, Helvetica, sans-serif;font-size: small;" id="text-ups_1"></p>
+            
+            </div>
+            <div style="margin-top: 10px;" class="con">
+             <h6 style="font-family: Arial, Helvetica, sans-serif;font-weight: bold;">Partners<span><button id="down_2" onclick="toggleParagraph_4()"><i class='bx bx-chevron-up bx-flip-horizontal' style='color:#ffffff' ></i></span></h6>
+             <p style="font-family: Arial, Helvetica, sans-serif;font-size: small;" id="text-ups_01"></p>
+            
+            </div>
+            <div style="margin-top: 10px;" class="con">
+             <h6 style="font-family: Arial, Helvetica, sans-serif;font-weight: bold;">Trips<span><button id="down_3" onclick="toggleParagraph_5()"><i class='bx bx-chevron-up bx-flip-horizontal' style='color:#ffffff' ></i></h6>
+             <p style="font-family: Arial, Helvetica, sans-serif;font-size: small;" id="text-ups_02"></p>
+             
+            </div>
+            <div style="margin-top: 10px;" class="con">
+             <h6 style="font-family: Arial, Helvetica, sans-serif;font-weight: bold;">International Sites<span><button id="down_4" onclick="toggleParagraph_6()"><i class='bx bx-chevron-up bx-flip-horizontal' style='color:#ffffff' ></i></span></h6>
+             <p style="font-family: Arial, Helvetica, sans-serif;font-size: small;" id="text-ups_03"></p>
+           
+            </div>
+         </div>
+       </footer>
+ 
+       <div id="myModal" class="modal">
+        <div class="modal-content">
+            <div style="display: flex;">
+                <h2 style="float: left;">Regional settings</h2>
+                <span style="margin-left: 140px;" class="close">&times;</span>
+            </div>
+            <label for="language"><i class='bx bxs-message-square-dots' style='color:#000000;padding: 5px;' ></i>  Language</label>
+            <select id="language">
+                <option value="en">Acehnese</option>
+                <option value="en">English (United Kingdom)</option>
+                <option value="en">Azerbaijani</option>
+                <option value="en">Armenian</option>
+                <option value="en">Arabic</option>
+                <option value="en">Amharic</option>
+                <option value="en">Albanian</option>
+                <option value="en">Afrikaans</option>
+                <option value="en">itlai</option>
+                <option value="en">Basque</option>
+                <option value="en">Belarusian</option>
+                <option value="en">Bengali</option>
+                <option value="en">Bosnian</option>
+                <option value="en">Bulgarian</option>
+                <option value="en">Catalan</option>
+                <option value="en">Cebuano</option>
+                <option value="en">Chinese (Simplified)</option>
+                <option value="en">Finnish</option>
+                <option value="en">French</option>Esperanto
+                <option value="en">Galician</option>
+                <option value="en">Georgian</option>
+                <option value="en">German</option>
+                <option value="en">Greek</option>
+                <option value="en">Gujarati</option>
+                <option value="en"> Haitian Creole</option>
+                <option value="en">Hindi</option>
+                <option value="en">Hungarian</option>
+                <option value="en">Icelandic</option>
+                <option value="en">Japanese</option>
+                <option value="en">Javanese</option>
+                <option value="en">Kannada</option>
+                <option value="en">Kazakh</option>
+                <option value="en">Khmer</option>
+                <option value="en">Khmer</option>
+                <!-- Add more options here -->
+            </select>
+
+            <label for="country"><i class="fa-solid fa-earth-americas"></i>   Country / Region</label>
+            <p style="font-size: small;">Selecting the country you’re in will give you local deals and information.</p>
+            <select style="margin-bottom: 10px;" id="country">
+                    <option value="af">Afghanistan</option>
+                    <option value="al">Albania</option>
+                    <option value="dz">Algeria</option>
+                    <option value="ad">Andorra</option>
+                    <option value="ao">Angola</option>
+                    <option value="ag">Antigua and Barbuda</option>
+                    <option value="ar">Argentina</option>
+                    <option value="am">Armenia</option>
+                    <option value="au">Australia</option>
+                    <option value="at">Austria</option>
+                    <option value="az">Azerbaijan</option>
+                    <option value="bs">The Bahamas</option>
+                    <option value="bh">Bahrain</option>
+                    <option value="bd">Bangladesh</option>
+                    <option value="bb">Barbados</option>
+                    <option value="by">Belarus</option>
+                    <option value="be">Belgium</option>
+                    <option value="bz">Belize</option>
+                    <option value="bj">Benin</option>
+                    <option value="bt">Bhutan</option>
+                    <option value="bo">Bolivia</option>
+                    <option value="ba">Bosnia and Herzegovina</option>
+                    <option value="bw">Botswana</option>
+                    <option value="br">Brazil</option>
+                    <option value="bn">Brunei</option>
+                    <option value="bg">Bulgaria</option>
+                    <option value="bf">Burkina Faso</option>
+                    <option value="bi">Burundi</option>
+                    <option value="kh">Cambodia</option>
+                    <option value="cm">Cameroon</option>
+                    <option value="ca">Canada</option>
+                    <option value="cv">Cape Verde</option>
+                    <option value="cf">Central African Republic</option>
+                    <option value="td">Chad</option>
+                    <option value="cl">Chile</option>
+                    <option value="cn">China</option>
+                    <option value="co">Colombia</option>
+                    <option value="km">Comoros</option>
+                    <option value="cd">Congo, Democratic Republic of the</option>
+                    <option value="cg">Congo, Republic of the</option>
+                    <option value="cr">Costa Rica</option>
+                    <option value="hr">Croatia</option>
+                    <option value="cu">Cuba</option>
+                    <option value="cy">Cyprus</option>
+                    <option value="cz">Czech Republic</option>
+                    <option value="dk">Denmark</option>
+                    <option value="dj">Djibouti</option>
+                    <option value="dm">Dominica</option>
+                    <option value="do">Dominican Republic</option>
+                    <option value="ec">Ecuador</option>
+                    <option value="eg">Egypt</option>
+                    <option value="sv">El Salvador</option>
+                    <option value="gq">Equatorial Guinea</option>
+                    <option value="er">Eritrea</option>
+                    <option value="ee">Estonia</option>
+                    <option value="sz">Eswatini</option>
+                    <option value="et">Ethiopia</option>
+                    <option value="fj">Fiji</option>
+                    <option value="fi">Finland</option>
+                    <option value="fr">France</option>
+                    <option value="ga">Gabon</option>
+                    <option value="gm">The Gambia</option>
+                    <option value="ge">Georgia</option>
+                    <option value="de">Germany</option>
+                    <option value="gh">Ghana</option>
+                    <option value="gr">Greece</option>
+                    <option value="gd">Grenada</option>
+                    <option value="gt">Guatemala</option>
+                    <option value="gn">Guinea</option>
+                    <option value="gw">Guinea-Bissau</option>
+                    <option value="gy">Guyana</option>
+                    <option value="ht">Haiti</option>
+                    <option value="hn">Honduras</option>
+                    <option value="hu">Hungary</option>
+                    <option value="is">Iceland</option>
+                    <option value="in">India</option>
+                    <option value="id">Indonesia</option>
+                    <option value="ir">Iran</option>
+                    <option value="iq">Iraq</option>
+                    <option value="ie">Ireland</option>
+                    <option value="il">Israel</option>
+                    <option value="it">Italy</option>
+                    <option value="jm">Jamaica</option>
+                    <option value="jp">Japan</option>
+                    <option value="jo">Jordan</option>
+                    <option value="kz">Kazakhstan</option>
+                    <option value="ke">Kenya</option>
+                    <option value="ki">Kiribati</option>
+                    <option value="kp">Korea, North</option>
+                    <option value="kr">Korea, South</option>
+                    <option value="xk">Kosovo</option>
+                    <option value="kw">Kuwait</option>
+                    <option value="kg">Kyrgyzstan</option>
+                    <option value="la">Laos</option>
+                    <option value="lv">Latvia</option>
+                    <option value="lb">Lebanon</option>
+                    <option value="ls">Lesotho</option>
+                    <option value="lr">Liberia</option>
+                    <option value="ly">Libya</option>
+                    <option value="li">Liechtenstein</option>
+                    <option value="lt">Lithuania</option>
+                    <option value="lu">Luxembourg</option>
+                    <option value="mg">Madagascar</option>
+                    <option value="mw">Malawi</option>
+                    <option value="my">Malaysia</option>
+                    <option value="mv">Maldives</option>
+                    <option value="ml">Mali</option>
+                    <option value="mt">Malta</option>
+                    <option value="mh">Marshall Islands</option>
+                    <option value="mr">Mauritania</option>
+                    <option value="mu">Mauritius</option>
+                    <option value="mx">Mexico</option>
+                    <option value="fm">Micronesia</option>
+                    <option value="md">Moldova</option>
+                    <option value="mc">Monaco</option>
+                    <option value="mn">Mongolia</option>
+                    <option value="me">Montenegro</option>
+                    <option value="ma">Morocco</option>
+                    <option value="mz">Mozambique</option>
+                    <option value="mm">Myanmar</option>
+                    <option value="na">Namibia</option>
+                    <option value="nr">Nauru</option>
+                    <option value="np">Nepal</option>
+                    <option value="nl">Netherlands</option>
+                    <option value="nz">New Zealand</option>
+                    <option value="ni">Nicaragua</option>
+                    <option value="ne">Niger</option>
+                    <option value="ng">Nigeria</option>
+                    <option value="mk">North Macedonia</option>
+                    <option value="no">Norway</option>
+                    <option value="om">Oman</option>
+                    <option value="pk">Pakistan</option>
+                    <option value="pw">Palau</option>
+                    <option value="pa">Panama</option>
+                    <option value="pg">Papua New Guinea</option>
+                    <option value="py">Paraguay</option>
+                    <option value="pe">Peru</option>
+                    <option value="ph">Philippines</option>
+                    <option value="pl">Poland</option>
+                    <option value="pt">Portugal</option>
+                    <option value="qa">Qatar</option>
+                    <option value="ro">Romania</option>
+                    <option value="ru">Russia</option>
+                    <option value="rw">Rwanda</option>
+                    <option value="kn">Saint Kitts and Nevis</option>
+                    <option value="lc">Saint Lucia</option>
+                    <option value="vc">Saint Vincent and the Grenadines</option>
+                    <option value="ws">Samoa</option>
+                    <option value="sm">San Marino</option>
+                    <option value="st">Sao Tome and Principe</option>
+                    <option value="sa">Saudi Arabia</option>
+                    <option value="sn">Senegal</option>
+                    <option value="rs">Serbia</option>
+                    <option value="sc">Seychelles</option>
+                    <option value="sl">Sierra Leone</option>
+                    <option value="sg">Singapore</option>
+                    <option value="sk">Slovakia</option>
+                    <option value="si">Slovenia</option>
+                    <option value="sb">Solomon Islands</option>
+                    <option value="so">Somalia</option>
+                    <option value="za">South Africa</option>
+                    <option value="es">Spain</option>
+                    <option value="lk">Sri Lanka</option>
+            </select>
+
+            <label for="currency"><i class="fa-solid fa-coins"></i>  Currency</label>
+            <select id="currency">
+                <option value="AFN">Afghanistan - Afghani (؋)</option>
+                <option value="ALL">Albania - Lek (L)</option>
+                <option value="DZD">Algeria - Dinar (دج)</option>
+                <option value="EUR">Andorra - Euro (€)</option>
+                <option value="AOA">Angola - Kwanza (Kz)</option>
+                <option value="XCD">Antigua and Barbuda - East Caribbean Dollar ($)</option>
+                <option value="ARS">Argentina - Peso ($)</option>
+                <option value="AMD">Armenia - Dram (֏)</option>
+                <option value="AUD">Australia - Dollar ($)</option>
+                <option value="EUR">Austria - Euro (€)</option>
+                <option value="AZN">Azerbaijan - Manat (₼)</option>
+                <option value="BSD">The Bahamas - Dollar ($)</option>
+                <option value="BHD">Bahrain - Dinar (BD)</option>
+                <option value="BDT">Bangladesh - Taka (৳)</option>
+                <option value="BBD">Barbados - Dollar ($)</option>
+                <option value="BYN">Belarus - Ruble (Br)</option>
+                <option value="EUR">Belgium - Euro (€)</option>
+                <option value="BZD">Belize - Dollar ($)</option>
+                <option value="XOF">Benin - West African CFA Franc (CFA)</option>
+                <option value="BTN">Bhutan - Ngultrum (Nu)</option>
+                <option value="BOB">Bolivia - Boliviano (Bs)</option>
+                <option value="BAM">Bosnia and Herzegovina - Convertible Mark (KM)</option>
+                <option value="BWP">Botswana - Pula (P)</option>
+                <option value="BRL">Brazil - Real (R$)</option>
+                <option value="BND">Brunei - Dollar ($)</option>
+                <option value="BGN">Bulgaria - Lev (лв)</option>
+                <option value="XOF">Burkina Faso - West African CFA Franc (CFA)</option>
+                <option value="BIF">Burundi - Franc (FBu)</option>
+                <option value="KHR">Cambodia - Riel (៛)</option>
+                <option value="XAF">Cameroon - Central African CFA Franc (FCFA)</option>
+                <option value="CAD">Canada - Dollar ($)</option>
+                <option value="CVE">Cape Verde - Escudo (Esc)</option>
+                <option value="XAF">Central African Republic - Central African CFA Franc (FCFA)</option>
+                <option value="XAF">Chad - Central African CFA Franc (FCFA)</option>
+                <option value="CLP">Chile - Peso ($)</option>
+                <option value="CNY">China - Yuan (¥)</option>
+                <option value="COP">Colombia - Peso ($)</option>
+                <option value="KMF">Comoros - Franc (CF)</option>
+                <option value="CDF">Congo, Democratic Republic of the - Franc (FC)</option>
+                <option value="CRC">Costa Rica - Colón (₡)</option>
+                <option value="HRK">Croatia - Kuna (kn)</option>
+                <option value="CUP">Cuba - Peso (₱)</option>
+                <option value="EUR">Cyprus - Euro (€)</option>
+                <option value="CZK">Czech Republic - Koruna (Kč)</option>
+                <option value="DKK">Denmark - Krone (kr)</option>
+                <option value="DJF">Djibouti - Franc (Fdj)</option>
+                <option value="XCD">Dominica - East Caribbean Dollar ($)</option>
+                <option value="DOP">Dominican Republic - Peso (RD$)</option>
+                <option value="USD">Ecuador - Dollar ($)</option>
+                <option value="EGP">Egypt - Pound (E£)</option>
+                
+                <!-- Add more options here -->
+            </select>
+
+           <div style="display: block;margin-right:10px;">
+            <button id="saveBtn">Save</button>
+            <button id="cancelBtn">Cancel</button>
+           </div>
+        </div>
+    </div>
+    <div class="fav" id="favo">
+       <div class="conant">
+        <div style="padding: 10px;">
+            <button style="background: none;border: none;"> <span class="close2">&times;</span></button>
+          </div>
+           <div class="con3">
+               <h3 style="color:#1456c9 ;"><i class='bx bx-landscape' style='color:#1456c9' ></i> Skyscanner</h3>
+           <h1 style="font-weight: bold;font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">Get the full experience</h1>
+           <h6>Track prices, make trip planning easier and enjoy faster booking.s</h6>
+           <div  class="btr">
+               <button onclick="next()" class="bt" id="btn_12" ><span>Continue With Email</span></button>
+               <button class="bt"><span><svg class="SocialLoginButton_smallLogo__ZjhjM" id="Facebook_Logo_SVG" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024"><path fill="#1877f2" d="M1024 512C1024 229.23 794.77 0 512 0S0 229.23 0 512c0 255.554 187.231 467.37 432 505.778V660H302V512h130V399.2C432 270.88 508.439 200 625.39 200 681.407 200 740 210 740 210v126h-64.563C611.835 336 592 375.467 592 415.957V512h142l-22.7 148H592v357.778C836.769 979.37 1024 767.554 1024 512z"></path><path fill="#fff" d="M711.3 660L734 512H592v-96.043c0-40.49 19.835-79.957 83.437-79.957H740V210s-58.592-10-114.61-10C508.438 200 432 270.88 432 399.2V512H302v148h130v357.778a517.396 517.396 0 0 0 160 0V660z"></path></svg> Facebook</span></button>
+               <button class="bt"><span> <svg class="SocialLoginButton_smallLogo__ZjhjM" id="Google_Logo_SVG" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M113.47 309.408L95.648 375.94l-65.139 1.378C11.042 341.211 0 299.9 0 256c0-42.451 10.324-82.483 28.624-117.732h.014L86.63 148.9l25.404 57.644c-5.317 15.501-8.215 32.141-8.215 49.456.002 18.792 3.406 36.797 9.651 53.408z" fill="#fbbb00"></path><path d="M507.527 208.176C510.467 223.662 512 239.655 512 256c0 18.328-1.927 36.206-5.598 53.451-12.462 58.683-45.025 109.925-90.134 146.187l-.014-.014-73.044-3.727-10.338-64.535c29.932-17.554 53.324-45.025 65.646-77.911h-136.89V208.176h245.899z" fill="#518ef8"></path><path d="M416.253 455.624l.014.014C372.396 490.901 316.666 512 256 512c-97.491 0-182.252-54.491-225.491-134.681l82.961-67.91c21.619 57.698 77.278 98.771 142.53 98.771 28.047 0 54.323-7.582 76.87-20.818l83.383 68.262z" fill="#28b446"></path><path d="M419.404 58.936l-82.933 67.896C313.136 112.246 285.552 103.82 256 103.82c-66.729 0-123.429 42.957-143.965 102.724l-83.397-68.276h-.014C71.23 56.123 157.06 0 256 0c62.115 0 119.068 22.126 163.404 58.936z" fill="#f14336"></path></svg> Google</span></button>
+               <button class="bt"><span><svg class="SocialLoginButton_smallLogo__ZjhjM SocialLoginButton_appleLogo__ZGY2Y" id="Apple_Logo_SVG" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35.676 35.676"><path d="M32.295 26.202c-.096.271-.189.562-.296.848-.886 2.399-2.231 4.529-3.863 6.481-.315.38-.682.724-1.061 1.043-.749.634-1.611 1.017-2.608 1.052a5.229 5.229 0 01-2.161-.394c-.502-.205-.996-.434-1.505-.619-1.652-.6-3.295-.521-4.92.121-.586.232-1.164.488-1.761.689-.692.232-1.41.326-2.141.188-.638-.119-1.196-.416-1.714-.799-.643-.476-1.183-1.056-1.688-1.67-2.391-2.916-3.996-6.213-4.771-9.906-.334-1.588-.494-3.189-.396-4.812.115-1.946.567-3.799 1.607-5.469 1.305-2.099 3.146-3.474 5.568-4.041 1.457-.343 2.874-.203 4.263.332.731.28 1.464.557 2.198.832a2.763 2.763 0 002.026-.005c.749-.286 1.499-.571 2.251-.85.771-.281 1.555-.511 2.373-.576a8.913 8.913 0 013.58.449c1.647.551 2.987 1.526 3.999 2.946l.077.113c-2.552 1.779-4.005 4.129-3.794 7.311.213 3.184 1.927 5.338 4.737 6.736zM17.98 8.253a5.448 5.448 0 002.174-.402c3.179-1.262 4.841-4.625 4.791-7.197-.004-.207-.018-.414-.027-.654-.327.049-.625.072-.911.144-2.321.569-4.107 1.864-5.281 3.961-.687 1.228-1.069 2.532-.952 3.957.008.151.063.189.206.191z"></path></svg> Apple</span></button>
+           </div>
+           
+           <input type="checkbox">
+           <label style="font-weight: bold;font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Remember me</label>
+            <p>By continuing you agree to our <a href="">Terms of Service</a> and <a href="">Privacy Policy</a></p>
+           </div>
+
+       </div>
+ 
+     </div>
+
+ <div id="drop_down"  class="for_drop">
+      <div class="main">
+        <div class="bt_container">
+            <button  class="btn-4 "><i class='bx bxs-plane-alt' style='color:#016afd' ></i> <a href="">  Flight</a></button>
+            <button  class="btn-4"><i class='bx bx-hotel' style='color:#016afd' ></i accordio> <a href=""> Hotels</a></button>
+            <button  class="btn-4"><i class='bx bx-car' style='color:#016afd' ></i> <a href=""> Car hire</a></button>
+        </div>
+        <hr>
+        <div class="bt_container">
+            <button  class="btn-4 "><i class='bx bxs-flag-alt' undefined ></i> <a href="">Flight</a></button>
+            <button  class="btn-4"><i class='bx bxs-bookmark-alt' style='color:#52961a'  ></i><a href=""> Hotels</a></button>
+            <button  class="btn-4"><i class='bx bxs-help-circle' style='color:#4e8620' ></i> <a href=""> Car hire</a></button>
+        </div>
+    </div>
+</div>
+
+<script src="scr.js"></script>
+  
+</body>
+</html>

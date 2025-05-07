@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <title>hotels</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="hotels.css">
+    <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 1700px; /* Make the body taller to enable scrolling */
+            background-size: cover; /* Adjust background size */
+            background-position: center; /* Make the body taller to enable scrolling */
+            background-image: url('monterrico-sunset-fin2.jpg'); /* Replace with your image URL */
+            background-attachment: fixed;
+          
+            background-position: center; /* Center the background image */
+        }
+        .tr{
+            background-color: #fffefe;
+            width: 500px;
+            display: flex;
+            font-weight: bold;
+            border-radius: 13px;
+        }
+          /* Optional styling for content */
+          .content {
+            position: relative;
+            z-index: 1; /* Make sure content is above the background */
+            padding: 20px;
+            margin-bottom: 200px;
+           /* Semi-transparent background for readability */
+        }
+
+    </style>
+</head>
+<body>
+    <section>
+        <header>
+            <div class="logo">
+             <a href="index.html"> <i class='bx bx-landscape' style='color:#fffefe' ></i> Skyscanner</a>
+            </div>
+             <div class="hotels_main">
+                <a href="">Help</a>
+                <button class="best">Egypt<img style="width: 20px;margin: 5px;" class="CultureSelectorButton_CultureSelectorButton__country-flag--unifiedHeader__MGJhY" src="https://images.skyscnr.com/images/country/flag/header/eg.png" alt="EG" title="EG">-English(uk.ج.مEGP)</button>
+                <button class="b2">Login</button>
+                 
+             </div>
+         </header>
+         <div class="btn">
+            <button    class="btn-1"><a href="index.html" ><i class='bx bxs-plane-alt' style='color:#fffefe' ></i> Flight</a></button>
+            <button  class="btn-1 active"><a href="hotels.html"><i class='bx bx-hotel' style='color:#fffefe' ></i accordio> Hotels</a></button>
+            <button  class="btn-1"><a href="car.html"><i class='bx bx-car' style='color:#fffefe' ></i> Car hire</a></button>
+        </div>
+</section>
+</body>
+<div class="content">
+    <div style="margin-left: 500px;margin-top: 200px; display: flex;position: relative;">
+        <div class="col">
+            <h1 style="color: white;">One big adventure</h1>
+            <h2 style="color: white;">One little app.</h2>
+            <div class="tr">
+                <div style="padding: 20px;margin-top: 10px;">
+                    <h5>Scan this code with your phone<br> to download the free app</h5>
+                <a style="color:#0585bb;" href=""><span><i class='bx bx-question-mark' style='color:#0585bb'  ></i></span><span>How do i scan this code</span></a>
+                </div>
+                <div >
+                    <img style="padding: 20px;margin-top: 10px;" src="download.png" alt="">
+                </div>
+            </div>
+            <div>
+                <button style="background: none;border: none;"><img width="200px" src="App-Store_Badge_EN.webp" alt=""></button>
+                <button style="background: none;border: none;"><img width="200px" src="google_Play_EN_no_padding.webp" alt=""></button>
+            </div>
+          
+        </div>
+        <div class="col">
+            <img src="https://content.skyscnr.com/m/5467076c5cc3a2f0/original/iPhone-Home-en-GB.png" alt="">
+        </div>
+    </div>
+</div>
+<footer >
+    <div style="margin-left: 400px;margin-top: 200px;" class="bt_2">
+     <button>Egypt-English(uk.ج.مEGP)</button>
+    </div>
+     <div style="margin-left: 250px;" class="col">
+         <a href="">Help</a>
+         <a href="">Privacy Settings</a>
+         <a href="">xLog in</a>
+     </div>
+     <div  class="col">
+         <a href="">Cookie policy</a>
+         <a href="">Privacy policy</a>
+         <a href="">Terms of service</a>
+         <a href="">Company Details</a>
+     </div>
+     <div style="margin-right:280px;margin-top: 50px;" class="culom">
+         <div style="margin-top: 10px;" class="con">
+          <h6 style="font-family: Arial, Helvetica, sans-serif;font-weight: bold;">Explore<span><button id="down_0" onclick="toggleParagraph_2()"><i class='bx bx-chevron-up bx-flip-horizontal' style='color:#ffffff' ></i></span></h6>
+          <p style="font-family: Arial, Helvetica, sans-serif;font-size: small;" id="text-ups_0"></p>
+        
+         </div>
+         <div style="margin-top: 10px;" class="con">
+          <h6 style="font-family: Arial, Helvetica, sans-serif;font-weight: bold;">Company <span><button id="down_1" onclick="toggleParagraph_3()"><i class='bx bx-chevron-up bx-flip-horizontal' style='color:#ffffff' ></i></span></h6>
+          <p style="font-family: Arial, Helvetica, sans-serif;font-size: small;" id="text-ups_1"></p>
+         
+         </div>
+         <div style="margin-top: 10px;" class="con">
+          <h6 style="font-family: Arial, Helvetica, sans-serif;font-weight: bold;">Partners<span><button id="down_2" onclick="toggleParagraph_4()"><i class='bx bx-chevron-up bx-flip-horizontal' style='color:#ffffff' ></i></span></h6>
+          <p style="font-family: Arial, Helvetica, sans-serif;font-size: small;" id="text-ups_01"></p>
+         
+         </div>
+         <div style="margin-top: 10px;" class="con">
+          <h6 style="font-family: Arial, Helvetica, sans-serif;font-weight: bold;">Trips<span><button id="down_3" onclick="toggleParagraph_5()"><i class='bx bx-chevron-up bx-flip-horizontal' style='color:#ffffff' ></i></h6>
+          <p style="font-family: Arial, Helvetica, sans-serif;font-size: small;" id="text-ups_02"></p>
+          
+         </div>
+         <div style="margin-top: 10px;" class="con">
+          <h6 style="font-family: Arial, Helvetica, sans-serif;font-weight: bold;">International Sites<span><button id="down_4" onclick="toggleParagraph_6()"><i class='bx bx-chevron-up bx-flip-horizontal' style='color:#ffffff' ></i></span></h6>
+          <p style="font-family: Arial, Helvetica, sans-serif;font-size: small;" id="text-ups_03"></p>
+        
+         </div>
+      </div>
+    </footer>
+    <div style="display: flex; width: 100%px; background-color: #ffffff;">
+        <h1>International Sites</h1>
+        <div style="display: flex;height: 200px;" >
+            <div class="col1">
+                <a href=""><img src="uk.png" alt=""><span>Hotels</span></a>
+                <a href=""><img src="jp.png" alt="">ホテル</a>
+
+            </div>
+            <div class="col1">
+                <a href=""><img src="au.png" alt="">Hotels</a>
+                <a href=""><img src="mx.png" alt="">Hoteles</a>
+
+            </div>
+            <div class="col1">
+                <a href=""><img src="cn.png" alt="">酒店</a>
+                <a href=""><img src="ru.png" alt="">Отели</a>
+
+            </div>
+            <div class="col1">
+                <a href=""><img src="in.png" alt="">Hotels</a>
+                <a href=""><img src="us.png" alt="">Hotels Deals in Popular Cities</a>
+
+            </div>
+        </div>
+    </div>
+</html>
